@@ -11,3 +11,9 @@ no package.js na sessao scripts são adicionados comandos
 "test:watch": "jest --watch"
 
 e no termina: npm run test ou npm test
+
+subindo o docker
+docker compose -f infra/compose.yaml up
+
+conexao com o banco de dados
+psql --host=localhost --username=postgres --port=5432
