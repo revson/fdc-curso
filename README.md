@@ -12,8 +12,14 @@ no package.js na sessao scripts são adicionados comandos
 
 e no termina: npm run test ou npm test
 
-subindo o docker
-docker compose -f infra/compose.yaml up
+-- docker
+docker compose -f infra/compose.yaml up -d
+docker compose -f infra/compose.yaml down
+
+instalar o client psql
 
 conexao com o banco de dados
 psql --host=localhost --username=postgres --port=5432
+
+instalar o modulo pg (client postgres para o node)
+npm install pg@8.11.3
